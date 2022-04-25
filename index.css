@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .gray {
@@ -11,14 +12,31 @@
     color: black;
 }
 
-svg {
-    margin-left: 5%;
-    margin-right: 5%;
+.cursive {
+    font-family: 'Cinzel Decorative', cursive;
 }
 
-nav .nav-bar {
+.half {
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+svg {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+nav.nav-bar {
     position: sticky;
-    height: auto;
+    height: fit-content; 
+    overflow: hidden;
 }
 
 .nav-bar a {
@@ -26,11 +44,15 @@ nav .nav-bar {
     width: fit-content;
     float: left;
     text-decoration: none;
-    padding: 20px 20px;
+    padding: 20px 25px;
 }
 
 .nav-bar .nav {
     float: right;
+}
+
+.nav-bar a img {
+    height: 1rem;
 }
 
 #currentpage {
@@ -39,11 +61,19 @@ nav .nav-bar {
 }
 
 #page-heading {
-    height: 100px;
+    overflow: hidden;
     background-color: #f0ebeb;
-    border-radius: 5px;
-    border-bottom: 1px solid black;
-    box-shadow: 2px 2px beige;
+    padding: 20px 25px;
+    margin-top: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom: 1px solid #cbcbcb;
+    box-shadow: 0px 0px 10px 5px #cbcbcb;
+}
+
+section {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 section .header {
