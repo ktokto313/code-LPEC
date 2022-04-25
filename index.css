@@ -3,12 +3,20 @@
     padding: 0px;
 }
 
+.gray {
+    color: gray;
+}
+
+.black {
+    color: black;
+}
+
 svg {
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.nav-bar {
+nav .nav-bar {
     position: sticky;
     height: auto;
 }
@@ -16,7 +24,7 @@ svg {
 .nav-bar a {
     display: block;
     width: fit-content;
-    color: black;
+    float: left;
     text-decoration: none;
     padding: 20px 20px;
 }
