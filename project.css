@@ -92,7 +92,6 @@ nav.nav-bar {
 }
 
 /* Section */
-/* Section */
 section {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -114,6 +113,14 @@ section .header {
     background-color: white;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+section .notification {
+    background-image: linear-gradient(to bottom right, green 10%, white);
+    border-radius: 25px;
+    border: 1px black solid;
+    height: 1000px;
+    margin: 20px 120px;
 }
 
 section .grid-container {
