@@ -17,8 +17,8 @@ p {
     cursor: pointer;
 }
 
-.cursive {
-    font-family: 'Cinzel Decorative', cursive;
+.serif {
+    font-family: 'Playfair Display', serif;
 }
 
 /* possible redundancy */
@@ -142,6 +142,10 @@ section .grid-container .grid-item {
     margin: 20px;
     border-radius: 25px;
     border: 1px black solid;
+}
+
+section .grid-container .grid-item img {
+    width: 100%;
 }
 
 #card-1, #card-3 {

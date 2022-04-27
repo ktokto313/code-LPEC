@@ -17,8 +17,8 @@ p {
     cursor: pointer;
 }
 
-.cursive {
-    font-family: 'Cinzel Decorative', cursive;
+.serif {
+    font-family: 'Playfair Display', serif;
 }
 
 /* possible redundancy */

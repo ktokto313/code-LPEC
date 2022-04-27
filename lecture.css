@@ -17,8 +17,8 @@ p {
     cursor: pointer;
 }
 
-.cursive {
-    font-family: 'Cinzel Decorative', cursive;
+.serif {
+    font-family: 'Playfair Display', serif;
 }
 
 /* possible redundancy */
@@ -91,7 +91,6 @@ nav.nav-bar {
     background-image: src();
 }
 
-/* Section */
 /* Section */
 section {
     margin-top: 100px;

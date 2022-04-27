@@ -17,8 +17,8 @@ p {
     cursor: pointer;
 }
 
-.cursive {
-    font-family: 'Cinzel Decorative', cursive;
+.serif {
+    font-family: 'Playfair Display', serif;
 }
 
 .half {
@@ -51,6 +51,26 @@ p {
 svg {
     margin-left: 2.5%;
     margin-right: 2.5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .half {
+        width: 100%;
+    }
+
+    .left, .right {
+        float: none;
+    }
+
+    .vert-cent {
+        transform: translate(0px, 0px);
+    }
+
+    .center-div {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 
 /* Nav bar */
@@ -88,6 +108,12 @@ nav.nav-bar {
     height: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .nav-bar a {
+        padding: 20px 20px;
+    }
+}
+
 /* Page heading */
 #page-heading {
     overflow: hidden;
@@ -106,6 +132,21 @@ nav.nav-bar {
 
 #page-heading .right img {
     margin: 20px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #page-heading {
+        padding: 20px 60px;
+    }
+
+    #page-heading .left {
+        text-align: center;
+    }
+
+    #page-heading .right img {
+        height: auto;
+        width: 100%;
+    }
 }
 
 /* Section */
