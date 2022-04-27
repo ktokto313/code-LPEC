@@ -1,12 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-}
-
-p {
-    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .button {
@@ -38,6 +33,7 @@ nav.nav-bar {
     position: sticky;
     top: 0px;
     height: fit-content; 
+    font-family: 'Open Sans', sans-serif;
     overflow: hidden;
     z-index: 1;
     background-color: white;
@@ -85,16 +81,52 @@ section {
 }
 
 section .heading {
-    font-weight: bolder;
-    margin: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 20px 100px;
 }
 
 section .body {
-    margin: 0px 50px;
+    margin: 0px 100px;
+}
+
+section .body * {
+    line-height: 1.6;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+section .body h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+section .body ul {
+    margin-left: 20px;
+}
+
+section .body img {
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    section .heading {
+        margin-left: 20px;
+    }
+
+    section .body {
+        margin: 0px 20px;
+    }
+
+    section .body img {
+        width: 100%;
+    }
 }
 
 /* Footer */
 footer {
+    font-family: 'Open Sans', sans-serif;
     background-color: gray;
     padding: 20px 40px;
 }
