@@ -21,20 +21,6 @@ p {
     font-family: 'Playfair Display', serif;
 }
 
-/* possible redundancy */
-.half {
-    width: 50%;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-/* end of possible redundancy */
-
 .center-div {
     position: relative;
     left: 50%;
@@ -49,6 +35,30 @@ p {
 svg {
     margin-left: 2.5%;
     margin-right: 2.5%;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .half {
+        width: 100%;
+    }
+
+    .left, .right {
+        float: none;
+    }
+
+    .vert-cent {
+        transform: translate(0px, 0px);
+    }
+
+    .center-div {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 
 /* Nav bar */
@@ -86,12 +96,32 @@ nav.nav-bar {
     height: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .nav-bar a {
+        padding: 20px 10px;
+    }
+}
+
 /* Page heading */
 #page-heading {
     background-image: src();
 }
 
-/* Section */
+@media only screen and (max-width: 768px) {
+    #page-heading {
+        padding: 20px 60px;
+    }
+
+    #page-heading .left {
+        text-align: center;
+    }
+
+    #page-heading .right img {
+        height: auto;
+        width: 100%;
+    }
+}
+
 /* Section */
 section {
     margin-top: 100px;
@@ -140,6 +170,28 @@ section .grid-container .grid-item {
     grid-column-end: 3;
 }
 
+@media only screen and (max-width: 768px) {
+    section {
+        margin-top: 30px;
+    }
+
+    section .heading {
+        margin-bottom: 20px;
+    }
+
+    section .header {
+        transform: translate(-50%, -125%);
+    }
+
+    section .body {
+        margin: 0px 50px;
+    }
+
+    section .body * {
+        margin: 5px 5px;
+    }
+}
+
 /* Footer */
 footer {
     background-color: gray;
@@ -155,6 +207,10 @@ footer .grid-container {
 footer .grid-item {
     height: 1.5rem;
     margin: 5px 0px;
+}
+
+footer .grid-item * {
+    float: left;
 }
 
 #footer-item-1, #footer-item-2, #footer-item-3 {
@@ -191,4 +247,10 @@ footer .grid-item#footer-item-2 img {
 footer .grid-item#footer-item-5 img {
     height: 0.9rem;
     transform: translate(0%, 25%);
+}
+
+@media only screen and (max-width: 768px) {
+    footer .grid-container {
+        margin-left: 30px;
+    }
 }

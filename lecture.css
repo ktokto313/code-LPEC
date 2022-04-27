@@ -156,6 +156,10 @@ footer .grid-item {
     margin: 5px 0px;
 }
 
+footer .grid-item * {
+    float: left;
+}
+
 #footer-item-1, #footer-item-2, #footer-item-3 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -190,4 +194,10 @@ footer .grid-item#footer-item-2 img {
 footer .grid-item#footer-item-5 img {
     height: 0.9rem;
     transform: translate(0%, 25%);
+}
+
+@media only screen and (max-width: 768px) {
+    footer .grid-container {
+        margin-left: 30px;
+    }
 }
