@@ -88,7 +88,14 @@ nav.nav-bar {
 
 /* Page heading */
 #page-heading {
-    background-image: src();
+    margin-top: 0px;
+}
+
+#page-heading img {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 /* Section */
