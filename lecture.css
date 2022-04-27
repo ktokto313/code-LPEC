@@ -5,10 +5,6 @@
     font-weight: 600;
 }
 
-h1 {
-    font-size: 3rem;
-}
-
 p {
     font-size: 15px;
 }
@@ -20,20 +16,6 @@ p {
 .serif {
     font-family: 'Playfair Display', serif;
 }
-
-/* possible redundancy */
-.half {
-    width: 50%;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-/* end of possible redundancy */
 
 .center-div {
     position: relative;
@@ -86,6 +68,12 @@ nav.nav-bar {
     height: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .nav-bar a {
+        padding: 20px 10px;
+    }
+}
+
 /* Page heading */
 #page-heading {
     background-image: src();
@@ -93,50 +81,16 @@ nav.nav-bar {
 
 /* Section */
 section {
-    margin-top: 100px;
     margin-bottom: 50px;
 }
 
 section .heading {
-    margin-bottom: 40px;
+    font-weight: bolder;
+    margin: 20px;
 }
 
 section .body {
-    margin: 0px 100px;
-}
-
-section .header {
-    white-space: nowrap;
-    position: absolute;
-    transform: translate(-50%, -100%);
-    left:50%;
-    background-color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-section .grid-container {
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
-    padding: 20px 100px;
-}
-
-section .grid-container .grid-item {
-    padding: 20px;
-    margin: 20px;
-    border-radius: 25px;
-    border: 1px black solid;
-}
-
-#card-1, #card-3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-#card-2, #card-4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    margin: 0px 50px;
 }
 
 /* Footer */

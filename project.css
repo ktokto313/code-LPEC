@@ -37,6 +37,14 @@ svg {
     margin-right: 2.5%;
 }
 
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -58,6 +66,14 @@ svg {
         position: relative;
         left: 50%;
         transform: translate(-50%, 0%);
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
     }
 }
 
@@ -84,7 +100,7 @@ nav.nav-bar {
 .nav-bar a:hover {
     color: white;
     background-color: black;
-    text-decoration: black underline 1px;
+    /*text-decoration: black underline 1px;*/
     text-underline-offset: 2px;
 }
 
@@ -197,6 +213,26 @@ section .grid-container .grid-item img {
     width: 100%;
 }
 
+section .grid-container .grid-item a {
+    display: block;
+    white-space: nowrap;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    top: 0%;
+}
+
+section .grid-container .grid-item .left {
+    float: left;
+}
+
+section .grid-container .grid-item .right {
+    float: right;
+}
+
 #card-1, #card-3 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -214,10 +250,6 @@ section .grid-container .grid-item img {
 
     section .heading {
         margin-bottom: 20px;
-    }
-
-    section .header {
-        transform: translate(-50%, -125%);
     }
 
     section .body {
