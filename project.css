@@ -195,6 +195,10 @@ section .notification a {
     border-radius: 5px;
 }
 
+section .notification p {
+    margin: 0px 30px;
+}
+
 section .grid-container {
     display: grid;
     grid-template-columns: auto auto;
