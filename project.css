@@ -198,7 +198,7 @@ section .notification a {
 }
 
 section .notification p {
-    margin: 0px 30px;
+    margin: 5px 5%;
 }
 
 section .grid-container {
