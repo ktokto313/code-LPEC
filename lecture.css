@@ -81,14 +81,15 @@ section {
 }
 
 section .heading {
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 3rem;
     font-weight: 900;
-    margin: 20px 100px;
+    margin: 20px 200px;
 }
 
 section .body {
-    margin: 0px 100px;
+    margin: 0px 200px;
 }
 
 section .body * {
@@ -112,6 +113,7 @@ section .body img {
 
 @media only screen and (max-width: 768px) {
     section .heading {
+        text-align: left;
         margin-left: 20px;
     }
 
