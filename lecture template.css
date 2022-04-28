@@ -21,18 +21,6 @@ p {
     font-family: 'Playfair Display', serif;
 }
 
-.half {
-    width: 50%;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
 .center-div {
     position: relative;
     left: 50%;
@@ -42,10 +30,6 @@ p {
 
 .center-text {
     text-align: center;
-}
-
-.vert-cent {
-    transform: translate(0px, 75%);
 }
 
 svg {
@@ -120,22 +104,7 @@ nav.nav-bar {
 
 /* Page heading */
 #page-heading {
-    overflow: hidden;
-    background-color: #f0ebeb;
-    padding: 20px 40px;
-    margin-top: 0px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom: 1px solid #cbcbcb;
-    box-shadow: 0px 0px 10px 5px #cbcbcb;
-}
-
-#page-heading .left {
-    padding: 20px 0px;
-}
-
-#page-heading .right img {
-    margin: 20px 20px;
+    background-image: src();
 }
 
 @media only screen and (max-width: 768px) {
@@ -163,6 +132,10 @@ section .heading {
     margin-bottom: 40px;
 }
 
+section .body {
+    margin: 0px 100px;
+}
+
 section .header {
     white-space: nowrap;
     position: absolute;
@@ -173,56 +146,28 @@ section .header {
     padding-right: 10px;
 }
 
-section .body {
-    margin: 0px 100px;
-}
-
-#previous-button {
-    position: absolute;
-    left: -50px;
-    top: 50%;
-    transform: translate(0%, -50%);
-}
-
-#next-button {
-    position: absolute;
-    right: -50px;
-    top: 50%;
-    transform: translate(0%, -50%);
-}
-
 section .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    padding: 20px 100px;
 }
 
-section .grid-container img {
-    width: 100%;
+section .grid-container .grid-item {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
+    border: 1px black solid;
 }
 
-#item-1 {
+#card-1, #card-3 {
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
-#item-2 {
+#card-2, #card-4 {
     grid-column-start: 2;
     grid-column-end: 3;
-}
-
-#item-3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-
-#item-4 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-
-section .carousel {
-    position: relative;
 }
 
 @media only screen and (max-width: 768px) {

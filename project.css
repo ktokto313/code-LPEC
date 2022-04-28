@@ -17,23 +17,10 @@ p {
     cursor: pointer;
 }
 
-.cursive {
-    font-family: 'Cinzel Decorative', cursive;
-}
 
-/* possible redundancy */
-.half {
-    width: 50%;
+.serif {
+    font-family: 'Playfair Display', serif;
 }
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-/* end of possible redundancy */
 
 .center-div {
     position: relative;
@@ -44,11 +31,52 @@ p {
 
 .center-text {
     text-align: center;
+    font-size: 40px;
 }
 
 svg {
     margin-left: 2.5%;
     margin-right: 2.5%;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .half {
+        width: 100%;
+    }
+
+    .left, .right {
+        float: none;
+    }
+
+    .vert-cent {
+        transform: translate(0px, 0px);
+    }
+
+    .center-div {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
 }
 
 /* Nav bar */
@@ -74,7 +102,7 @@ nav.nav-bar {
 .nav-bar a:hover {
     color: white;
     background-color: black;
-    text-decoration: black underline 1px;
+    /*text-decoration: black underline 1px;*/
     text-underline-offset: 2px;
 }
 
@@ -86,9 +114,37 @@ nav.nav-bar {
     height: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .nav-bar a {
+        padding: 20px 10px;
+    }
+}
+
 /* Page heading */
 #page-heading {
-    background-image: src();
+    margin-top: 0px;
+}
+
+#page-heading img {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    #page-heading {
+        padding: 0px;
+    }
+
+    #page-heading .left {
+        text-align: center;
+    }
+
+    #page-heading .right img {
+        height: auto;
+        width: 100%;
+    }
 }
 
 /* Section */
@@ -119,14 +175,38 @@ section .notification {
     background-image: linear-gradient(to bottom right, green 10%, white);
     border-radius: 25px;
     border: 1px black solid;
-    height: 1000px;
     margin: 20px 120px;
+    padding: 20px;
+    padding-bottom: 3rem;
+}
+
+section .notification h2 {
+    color: white;
+    padding-bottom: 5px;
+}
+
+section .notification img {
+    width: 90%;
+    top: 0%;
+}
+
+section .notification a {
+    float: right;
+    color: black;
+    padding: 2.5px 5px;
+    text-decoration: none;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+section .notification p {
+    margin: 5px 5%;
 }
 
 section .grid-container {
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     padding: 20px 100px;
 }
 
@@ -137,6 +217,34 @@ section .grid-container .grid-item {
     border: 1px black solid;
 }
 
+section .grid-container .grid-item img {
+    width: 100%;
+}
+
+section .grid-container .grid-item a {
+    display: block;
+    white-space: nowrap;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    top: 0%;
+}
+
+section .grid-container .grid-item .left {
+    float: left;
+}
+
+section .grid-container .grid-item .right {
+    float: right;
+}
+
+section .grid-container .grid-item p:last-child {
+    clear: both;
+}
+
 #card-1, #card-3 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -145,6 +253,43 @@ section .grid-container .grid-item {
 #card-2, #card-4 {
     grid-column-start: 2;
     grid-column-end: 3;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        margin-top: 30px;
+    }
+
+    section .heading {
+        margin-bottom: 20px;
+    }
+
+    section .body {
+        margin: 0px 50px;
+    }
+
+    section .body * {
+        margin: 5px 5px;
+    }
+
+    section .body.notification {
+        margin: 20px 60px;
+    }
+
+    section .grid-container {
+        display: block;
+        overflow: auto;
+        white-space: nowrap;
+        height: fit-content;
+        margin: 20px 40px;
+        padding: 0px;
+    }
+
+    section .grid-item {
+        display: inline-block;
+        height: 500px;
+        white-space: normal;
+    }
 }
 
 /* Footer */
@@ -162,6 +307,10 @@ footer .grid-container {
 footer .grid-item {
     height: 1.5rem;
     margin: 5px 0px;
+}
+
+footer .grid-item * {
+    float: left;
 }
 
 #footer-item-1, #footer-item-2, #footer-item-3 {
@@ -198,4 +347,10 @@ footer .grid-item#footer-item-2 img {
 footer .grid-item#footer-item-5 img {
     height: 0.9rem;
     transform: translate(0%, 25%);
+}
+
+@media only screen and (max-width: 768px) {
+    footer .grid-container {
+        margin-left: 30px;
+    }
 }
