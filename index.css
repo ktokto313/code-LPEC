@@ -266,6 +266,8 @@ footer .grid-item {
 
 footer .grid-item * {
     float: left;
+    color: black;
+    text-decoration: none;
 }
 
 #footer-item-1, #footer-item-2, #footer-item-3 {
