@@ -83,7 +83,7 @@ section {
 section .heading {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 1rem;
     font-weight: 900;
     margin: 20px 200px;
 }
