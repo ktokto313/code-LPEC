@@ -20,7 +20,6 @@ p {
 .serif {
     font-family: 'Playfair Display', serif;
 }
-
 .center-div {
     position: relative;
     left: 50%;
@@ -30,6 +29,7 @@ p {
 
 .center-text {
     text-align: center;
+    font-size: 40px;
 }
 
 svg {
