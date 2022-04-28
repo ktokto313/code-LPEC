@@ -177,6 +177,14 @@ section .body {
     margin: 0px 100px;
 }
 
+section #toan .two-div {
+    width: 50%;
+}
+
+section #toan .three-div {
+    width: 33.33%;
+}
+
 #previous-button {
     position: absolute;
     left: -50px;
