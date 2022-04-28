@@ -118,7 +118,7 @@ section .body img {
 
 @media only screen and (max-width: 768px) {
     section .heading {
-        font-size: 1rem;
+        font-size: 2rem;
         margin: 20px;
         text-align: left;
         margin-left: 20px;
@@ -152,6 +152,8 @@ footer .grid-item {
 }
 
 footer .grid-item * {
+    color: black;
+    text-decoration: none;
     float: left;
 }
 
