@@ -206,7 +206,7 @@ section .grid-container {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    padding: 20px 100px;
+    padding: 20px 5%;
 }
 
 section .grid-container .grid-item {
