@@ -178,11 +178,43 @@ section .body {
 }
 
 section #toan .two-div {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
 
-section #toan .three-div {
-    width: 33.33%;
+h2{
+    margin-top: 2%;
+}
+
+section #toan .three-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+section #toan .three-div div{
+    margin-inline: 2%;
+}
+
+section #toan .two-div div{
+    margin-inline: 5%;
+}
+
+section #avatar {
+    border-radius: 100%;
+    border: 0.2vw solid #172e08;
+    /* outline: 0.8vw solid #5edb12; */
+    max-width: 200px;
+    max-height: 200px;
+    height: 100%;
+    width: 100%;
+}
+
+image .round-avatar-2{
+    border-radius: 30%;
 }
 
 #previous-button {
