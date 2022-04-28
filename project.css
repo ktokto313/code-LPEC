@@ -190,7 +190,9 @@ section .notification img {
 
 section .notification a {
     float: right;
+    color: black;
     padding: 2.5px 5px;
+    text-decoration: none;
     background-color: lightgray;
     border-radius: 5px;
 }

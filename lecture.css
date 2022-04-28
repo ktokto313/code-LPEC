@@ -92,6 +92,11 @@ section .body {
     margin: 0px 200px;
 }
 
+section .body a {
+    color: green;
+    text-decoration: none;
+}
+
 section .body * {
     line-height: 1.6;
     padding: 10px 0px;
